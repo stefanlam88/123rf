@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.inmagine.shape.views.PixelGridView
+        android:id="@+id/grid"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:background="@android:color/darker_gray">
+
+    </com.inmagine.shape.views.PixelGridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/button_one"
+                android:text="2 x 2 shapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+
+            <Button
+                android:id="@+id/button_two"
+                android:text="3 x 3 shapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/button_filter_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alpha blend filter"
+                android:layout_gravity="bottom"/>
+
+            <Button
+                android:id="@+id/button_filter_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hue filter"
+                android:layout_gravity="bottom"/>
+
+            <Button
+                android:id="@+id/button_filter_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bulge Distortion filter"
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
